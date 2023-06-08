@@ -22,20 +22,28 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div class="App">
+      <header>
+        <h1>
+          Still working on,,, I'm gonna put more css and js after this,,, sorry
+        </h1>
+      </header>
+     
+      <div>
         {loading ? <h1>loading</h1> : <div>
-      {rockets.map((rocket) => (
-        console.log(rocket),
-        <div key={rocket.id} class="card">
-          <h2> {rocket.rocket_name} </h2>
-          <span>
-            company : {rocket.company}  country : {rocket.country}
-          </span>
-          <br/>
-          <span>{rocket.description}</span>
-        </div>
-      ))}
-    </div>}
+        {rockets.map((rocket) => (
+          console.log(rocket),
+          <div key={rocket.id} class="card">
+            <h2> {rocket.rocket_name} </h2>
+            <span>
+              company : {rocket.company}  country : {rocket.country}
+            </span>
+            <br/>
+            <span>{rocket.description}</span>
+          </div>
+        ))}
+      </div>}
+      </div>
     </div>
   );
 }
