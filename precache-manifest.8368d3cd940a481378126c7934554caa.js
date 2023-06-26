@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "89744b8d70882df8050a",
+    "revision": "5c846b0155f9f1670b8c",
     "url": "/react-for-beginners/static/css/main.4024e75c.chunk.css"
   },
   {
-    "revision": "89744b8d70882df8050a",
-    "url": "/react-for-beginners/static/js/main.8146eb99.chunk.js"
+    "revision": "5c846b0155f9f1670b8c",
+    "url": "/react-for-beginners/static/js/main.4bf727d4.chunk.js"
   },
   {
     "revision": "6873a68efa9d37e96a89",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/react-for-beginners/static/js/2.53f77c8d.chunk.js"
   },
   {
-    "revision": "bf05e15848eec38374d02662cce476f0",
+    "revision": "85eff2ce4bc1d7d892e6e9f37e8c417a",
     "url": "/react-for-beginners/index.html"
   }
 ];
