@@ -1,14 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Detail from "./routes/Detail";
 import Home from "./routes/Home";
 
 function AppRouter() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/article/:id" element={<Detail />} /> */}
       </Routes>
     </BrowserRouter>
   );
