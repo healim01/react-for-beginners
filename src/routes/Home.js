@@ -28,8 +28,9 @@ function Home() {
       <div>
         {loading ? <h1>loading</h1> : <div className={styles.grid}>
         {articles.map((article, index) => (
+          console.log(article),
           <div key={index} className={styles.card}>
-            <Link to={`/article/${index}`} state={{ article }}>
+            <Link to={article.url} state={{ article }}>
                 <div className={styles.imgContent}>
                   {article.urlToImage ? 
                     <img className={styles.img} src={article.urlToImage} alt={article.title}/> : 
@@ -39,7 +40,8 @@ function Home() {
             </Link>
             <div className={styles.content}> 
               <h3> {article.title} </h3>
-              <span> {article.description} </span>
+              {/* <span> {article.description} </span> */}
+              <span>{article.description.length > 150 ? `${article.description.slice(0, 150)}...` : article.description}</span>
               <div className={styles.published}> {article.publishedAt} </div>
             </div>
           </div>
